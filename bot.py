@@ -43,12 +43,12 @@ def post_comment(youtube, channel_id, comment_text):
 def run_bot():
     youtube = authenticate()
     channel_id = "UCT0dmfFCLWuVKPWZ6wcdKyg"
-    comment_text = "Great content, Love it!!"
+    comment_text = "This is an automated first comment!"
 
     # print("hello")
     
     while True:
         post_comment(youtube, channel_id, comment_text)
-        time.sleep(10)  # Check every 10 minutes
+        time.sleep(600)  # Check every 10 minutes
 
 run_bot()
